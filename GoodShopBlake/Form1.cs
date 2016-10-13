@@ -33,6 +33,7 @@ namespace GoodShopBlake
                 Datboi = 0.99;
                 Arthur = 5.99;
                 HST = .13;
+            
             }
             catch
             {
