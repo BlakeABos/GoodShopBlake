@@ -35,9 +35,9 @@
             this.spongeLabel = new System.Windows.Forms.Label();
             this.spongeBox = new System.Windows.Forms.TextBox();
             this.datboiLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.datboiBox = new System.Windows.Forms.TextBox();
             this.arthurLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.arthurBox = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -126,14 +126,14 @@
             this.datboiLabel.TabIndex = 8;
             this.datboiLabel.Text = "Dat Boi $0.99 each";
             // 
-            // textBox1
+            // datboiBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(226, 122);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 23);
-            this.textBox1.TabIndex = 9;
+            this.datboiBox.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datboiBox.Location = new System.Drawing.Point(226, 122);
+            this.datboiBox.Multiline = true;
+            this.datboiBox.Name = "datboiBox";
+            this.datboiBox.Size = new System.Drawing.Size(48, 23);
+            this.datboiBox.TabIndex = 9;
             // 
             // arthurLabel
             // 
@@ -145,14 +145,14 @@
             this.arthurLabel.TabIndex = 11;
             this.arthurLabel.Text = "Arthur $5.99 each";
             // 
-            // textBox2
+            // arthurBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(226, 159);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(48, 22);
-            this.textBox2.TabIndex = 12;
+            this.arthurBox.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arthurBox.Location = new System.Drawing.Point(226, 159);
+            this.arthurBox.Multiline = true;
+            this.arthurBox.Name = "arthurBox";
+            this.arthurBox.Size = new System.Drawing.Size(48, 22);
+            this.arthurBox.TabIndex = 12;
             // 
             // calculateButton
             // 
@@ -365,9 +365,9 @@
             // zeroLabel
             // 
             this.zeroLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.zeroLabel.Location = new System.Drawing.Point(312, 251);
+            this.zeroLabel.Location = new System.Drawing.Point(359, -1);
             this.zeroLabel.Name = "zeroLabel";
-            this.zeroLabel.Size = new System.Drawing.Size(132, 34);
+            this.zeroLabel.Size = new System.Drawing.Size(85, 47);
             this.zeroLabel.TabIndex = 29;
             this.zeroLabel.Text = "Please enter 0 in products you dont wan\'t";
             // 
@@ -394,10 +394,10 @@
             this.Controls.Add(this.subtotalLabel);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.arthurBox);
             this.Controls.Add(this.arthurLabel);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.datboiBox);
             this.Controls.Add(this.datboiLabel);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -432,10 +432,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label datboiLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox datboiBox;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label arthurLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox arthurBox;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Label subtotalLabel;
