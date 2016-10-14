@@ -52,19 +52,21 @@
             this.totalOutcome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tenderedLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tenderedBox = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.changeOutcome = new System.Windows.Forms.Label();
             this.receiptButton = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.zeroLabel = new System.Windows.Forms.Label();
+            this.memelordBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memelordBox)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -218,6 +220,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // subtotalLabel
             // 
@@ -294,14 +297,14 @@
             this.tenderedLabel.TabIndex = 22;
             this.tenderedLabel.Text = "Tendered";
             // 
-            // textBox3
+            // tenderedBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(125, 350);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 23;
+            this.tenderedBox.Font = new System.Drawing.Font("PT Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenderedBox.Location = new System.Drawing.Point(125, 350);
+            this.tenderedBox.Multiline = true;
+            this.tenderedBox.Name = "tenderedBox";
+            this.tenderedBox.Size = new System.Drawing.Size(100, 23);
+            this.tenderedBox.TabIndex = 23;
             // 
             // changeButton
             // 
@@ -317,6 +320,7 @@
             this.changeButton.TabIndex = 24;
             this.changeButton.Text = "Calculate Change";
             this.changeButton.UseVisualStyleBackColor = false;
+            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // label2
             // 
@@ -351,13 +355,14 @@
             this.receiptButton.TabIndex = 27;
             this.receiptButton.Text = "Print Receipt";
             this.receiptButton.UseVisualStyleBackColor = false;
+            this.receiptButton.Click += new System.EventHandler(this.receiptButton_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(280, 283);
+            this.pictureBox6.Location = new System.Drawing.Point(280, 298);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(164, 158);
+            this.pictureBox6.Size = new System.Drawing.Size(164, 143);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
@@ -371,19 +376,29 @@
             this.zeroLabel.TabIndex = 29;
             this.zeroLabel.Text = "Please enter 0 in products you dont wan\'t";
             // 
+            // memelordBox
+            // 
+            this.memelordBox.Image = ((System.Drawing.Image)(resources.GetObject("memelordBox.Image")));
+            this.memelordBox.Location = new System.Drawing.Point(362, -1);
+            this.memelordBox.Name = "memelordBox";
+            this.memelordBox.Size = new System.Drawing.Size(548, 470);
+            this.memelordBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.memelordBox.TabIndex = 30;
+            this.memelordBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(440, 463);
+            this.ClientSize = new System.Drawing.Size(746, 468);
             this.Controls.Add(this.zeroLabel);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.receiptButton);
             this.Controls.Add(this.changeOutcome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tenderedBox);
             this.Controls.Add(this.tenderedLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.totalOutcome);
@@ -407,15 +422,17 @@
             this.Controls.Add(this.pepeLabel);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.memelordBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "The Meme Shop";
+            this.Text = "Blake\'s Dank Meme Shop";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memelordBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,13 +463,14 @@
         private System.Windows.Forms.Label totalOutcome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label tenderedLabel;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tenderedBox;
         private System.Windows.Forms.Button changeButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label changeOutcome;
         private System.Windows.Forms.Button receiptButton;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label zeroLabel;
+        private System.Windows.Forms.PictureBox memelordBox;
     }
 }
 
