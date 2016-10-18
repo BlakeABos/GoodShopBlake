@@ -60,6 +60,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.zeroLabel = new System.Windows.Forms.Label();
             this.memelordBox = new System.Windows.Forms.PictureBox();
+            this.codeBox = new System.Windows.Forms.PictureBox();
+            this.newButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memelordBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.codeBox)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -220,7 +223,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            //this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // subtotalLabel
             // 
@@ -370,7 +373,7 @@
             // zeroLabel
             // 
             this.zeroLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.zeroLabel.Location = new System.Drawing.Point(359, -1);
+            this.zeroLabel.Location = new System.Drawing.Point(277, 228);
             this.zeroLabel.Name = "zeroLabel";
             this.zeroLabel.Size = new System.Drawing.Size(85, 47);
             this.zeroLabel.TabIndex = 29;
@@ -386,12 +389,41 @@
             this.memelordBox.TabIndex = 30;
             this.memelordBox.TabStop = false;
             // 
+            // codeBox
+            // 
+            this.codeBox.Image = ((System.Drawing.Image)(resources.GetObject("codeBox.Image")));
+            this.codeBox.Location = new System.Drawing.Point(464, 350);
+            this.codeBox.Name = "codeBox";
+            this.codeBox.Size = new System.Drawing.Size(280, 119);
+            this.codeBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.codeBox.TabIndex = 31;
+            this.codeBox.TabStop = false;
+            // 
+            // newButton
+            // 
+            this.newButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.newButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.newButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.newButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.newButton.Location = new System.Drawing.Point(281, 298);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(163, 143);
+            this.newButton.TabIndex = 32;
+            this.newButton.Text = "New Order!";
+            this.newButton.UseVisualStyleBackColor = false;
+            this.newButton.Click += new System.EventHandler(this.newButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(746, 468);
+            this.Controls.Add(this.newButton);
+            this.Controls.Add(this.codeBox);
             this.Controls.Add(this.zeroLabel);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.receiptButton);
@@ -433,6 +465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memelordBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.codeBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,6 +504,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label zeroLabel;
         private System.Windows.Forms.PictureBox memelordBox;
+        private System.Windows.Forms.PictureBox codeBox;
+        private System.Windows.Forms.Button newButton;
     }
 }
 
